@@ -1,0 +1,34 @@
+
+Purpose: “Querying the Ovirt engine, collecting data, decision making based upon available assets, and creating Virtual machine if space is available”
+Following must be completed in numerical order:
+
+Step 1: Ask user how many cores they would like for their VM
+
+Step 2: Prompt user for how much memory they require for the VM
+
+Step 3: Boot Sequence for VM creation. Ideal boot order: (Network Boot, hard disk, CD)
+
+Step 4: Prompt user for type of VM, OS on VM.
+
+Step 5: Prompt user for name of VM
+
+Step 6: Adding nic, create and add (virtio)
+
+Step 7: Adding disk, prompt user for size, type will be virtio
+
+Step 8: Give list with name of VMs
+
+Step 9: Mac address of nic
+
+Based on these attributes, script must check if there are sufficient resources to run this VM on the data center. All the following still must be finished in this project:
+
+Step 10: Query ovirt through CLI for available assets
+
+Step 11:  Use grep commands to store this information to a text file, write a script that will sort through this information
+
+Step 12: Compare this information to the user inputs that were saved earlier
+
+Step 13: Create a loop that will sort through all hosts with low time complexity (preferable O(log n), or O(n). Time is crucial since this is one of the benefits that the script will have over creating the VM through the Ovirt GUI.
+
+Step 14: Create a VM if the host has the available assets.
+ 
